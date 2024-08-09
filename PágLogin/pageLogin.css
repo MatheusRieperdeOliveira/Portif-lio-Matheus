@@ -1,0 +1,110 @@
+* {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    background-color: #008080;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+#caixaLogin {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    top: 200px;
+    left: 400px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 1px 1px #000;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+
+#caixaLogin p {
+
+    margin-left: 30px;
+    font-size: 20px;
+    flex-wrap: wrap;
+    color: #000;
+}
+
+#caixaLogin input {
+
+    border-radius: 10px;
+    border: 1px solid #000;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 290px;
+    font-size: 20px;
+}
+
+#inGo {
+    cursor: pointer;
+    position: absolute;
+    margin-top: 72%;
+    background-color: #008B8B;
+}
+
+#inGo:hover {
+    background-color: #20B2AA;
+}
+
+img {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+
+}
+
+/* CAIXA CASO DÊ ERRO NO LOGIN */
+
+#mensagemDeLoginInválido {
+    display: none;
+    width: 500px;
+    height: 200px;
+    border: 2px solid #000;
+    background-color: #fff;
+    position: absolute;
+    top: 300px;
+    right: 420px;
+    /* display: flex; */
+    text-align: center;
+    align-items: flex-end;
+    border-radius: 10px;
+}
+
+#mensagemDeLoginInválido img {
+    position: absolute;
+    left: 230px;
+}
+
+#mensagemDeLoginInválido p {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+/* CRIAR ANIMAÇÃO DE ALERTA*/
+/* @keyframes alert{
+    0%{
+
+    }
+    100%{
+
+    }
+} */    

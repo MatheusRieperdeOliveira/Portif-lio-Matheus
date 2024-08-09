@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="/PágPrincipal/canalPrincipal.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/PágLogin/Imagens/dever-de-casa.png" type="image/x-icon">
+    <title>Home | Mathz</title>
+</head>
+
+<body>
+    <header>
+        <div id="bosta">
+            <div id="informacoesUsuario">
+                <h1></h1>
+                <img src="Imagens/LegoMen.png" id="identificador" alt="">
+            </div>
+            <div id="pesquisa">
+                <img class="animatiom" id="inLupa" onclick="openBox()"
+                    src="/PágPrincipal/Imagens/icons8-pesquisar-64.png" alt="">
+                <img id="inEnvelope" src="/PágPrincipal/Imagens/icons8-envelope-64.png" alt="">
+                <input id="inPesquisa" placeholder="Digite sua dúvida" type="text">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="inTasks">
+            <table>
+                <thead>
+                    <tr id="cabecalhoTarefas">
+                        <th>Atividade</th>
+                        <th>Situação</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+        <button class="adTarefa" id="addTarefa" >Adicionar Tarefa</button>
+        <form>
+            <p>Tarefa:
+                <input type="text" id="inTarefa">
+            </p>
+            <p>Situação:
+                <input type="text" id="inSituacao">
+            </p>
+            <input type="submit" id="inGo">
+        </form>
+    </main>
+
+
+
+
+    <script src="/PágPrincipal/canalPrincipal.js"></script>
+</body>
+
+</html>
