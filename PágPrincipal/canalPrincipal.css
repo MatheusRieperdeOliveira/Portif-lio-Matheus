@@ -42,7 +42,7 @@ header #pesquisa img:hover {
 #pesquisa {
     display: flex;
     justify-content: flex-end;
-
+    cursor: pointer;
 }
 
 #inPesquisa {

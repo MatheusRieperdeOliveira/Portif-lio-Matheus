@@ -5,7 +5,16 @@ const name = "Matheus"
 const frm = document.querySelector("form")
 const tbTask = document.querySelector("tbody")
 
-resp.innerText = `Olá, ${name}`
+window.addEventListener("load", () =>{
+    if(localStorage.getItem("tarefa" && "situacao")){
+        const tarefa = localStorage.getItem("tarefa").split(";")
+        const situacao = localStorage.getItem("situacao").split(";")
+
+        inserirTarefa(tarefa, situacao)
+    }
+})
+ 
+
 /*Função de aparecer a lupa de pesquisa*/
 function openBox() {
     if (inPesquisa.style.display == "block") {
@@ -54,7 +63,7 @@ function inserirTarefa(tarefa, situacao) {
     localStorage.setItem("situacao", situacao)
 
     col1.innerText = tarefa;
-    col2.innerText = situacao
+    col2.innerText = situacao;
     col3.appendChild(imgLixeira);
 
 }
